@@ -10,6 +10,7 @@ ReactDOM.render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/a-propos" element={<About />} />
+                <Route path="*" element={<Error />} />
             </Routes>
                   </Router>
     </React.StrictMode>,
