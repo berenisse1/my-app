@@ -1,6 +1,6 @@
 import React from "react";
-//import logo from '../assets/logo.png'
-//import '../styles/Banner.css'
+//import image from '../../assets/banner-img.png'
+import '../../styles/Banner.css'
 
 
 function Banner({image, texte}) {
