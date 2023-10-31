@@ -13,9 +13,9 @@ ReactDOM.render(
                 <Route path="/" element={<Home />} />
                 <Route path="/a-propos" element={<About />} />
                 <Route path="*" element={<ErrorPage />} />
-                <Route path="/logements/id" element={<Logement/>} />
+                <Route path="/logements/:id" element={<Logement/>} />
             </Routes>
-                  </Router>
+        </Router>
     </React.StrictMode>,
 document.getElementById('root')
 )

@@ -9,12 +9,8 @@ function Logement () {
         <Header/>
         <main>
             <div>
-                {logements.map((logements)=>
-                <div>
-                    <Collapse title="Équipements" text={logements.equipments} key= {logements.id} />
-                    <Collapse title="Description" text={logements.description} key= {logements.id} />
-                </div>      
-                )}  
+                <Collapse title="Équipements" text={logements.equipments} key= {logements.id} />
+                <Collapse title="Description" text={logements.description} key= {logements.id} />
             </div>
         </main>
         <Footer/>

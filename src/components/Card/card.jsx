@@ -1,12 +1,15 @@
 import React from 'react';
-import '../../styles/Card.css'
+import '../../styles/Card.css';
+import { Link } from "react-router-dom";
 
-function Card({image, title}) {
+function Card({logement}) {
     return (
-      <>
-        <img src={image} alt={title} className="card-img" />
-        <h2 className="card-title">{title}</h2>
-      </>
+      <Link to={`/logements/${logement.id}`}>
+        <article>
+          <img src={logement.cover} alt={logement.title} className="card-img" />
+          <h2 className="card-title">{logement.title}</h2>
+        </article>
+      </Link>
     );
 }
 
