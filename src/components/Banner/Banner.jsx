@@ -1,5 +1,4 @@
 import React from "react";
-//import image from '../../assets/banner-img.png'
 import '../../styles/Banner.css'
 
 
