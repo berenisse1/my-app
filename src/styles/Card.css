@@ -1,0 +1,35 @@
+.card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px 60px;
+    border-radius: 25px;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+
+}
+   
+.card-img{
+    width: 340px;
+    height: 255px;
+    border-radius:25px ;
+
+}
+
+.card-title{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none
+    
+}
+
+
+@media (min-width: 1024px){
+    .card{
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-column-gap: 60px;
+        grid-row-gap: 50px;
+        background-color: #f6f6f6;
+    }
+}
