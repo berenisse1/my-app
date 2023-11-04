@@ -1,3 +1,4 @@
+import './index.css';
 import About from "./pages/About/About"
 import React from 'react'
 import ReactDOM from 'react-dom'
