@@ -2,15 +2,18 @@ import React from "react";
 import'../../styles/Collapse.css';
 import arrow from '../../assets/arrow.png'
 
-function Collapse ({title, text}){
+
+function Collapse ({collapse}){
     return(
         <>
         <div className="collapse">
             <div className = "collapse-header">
-                <div className = "collapse-title">{title}</div>
+                <div className = "collapse-title">
+                    <h3>{collapse.title}</h3>
+                </div>
                 <img src= {arrow} alt="flèche" />
             </div>
-            <div className ="collapse-text">{text} </div>
+            <div className ="collapse-text">{collapse.text} </div>
         </div>
         </>
     
@@ -22,4 +25,4 @@ function Collapse ({title, text}){
  
  
  
- export default Collapse;
+export default Collapse;
