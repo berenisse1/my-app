@@ -4,6 +4,9 @@ import logements from "../../data/logements.json";
 import Collapse from "../../components/Collapse/Collapse";
 import { useParams } from "react-router-dom";
 import Tag from "../../components/Tag/Tag";
+import Host from "../../components/Host/Host";
+
+
 
 function Logement () { 
     
@@ -14,6 +17,7 @@ function Logement () {
         <Header/>
         <main>
         <div>
+            <Host image={logement?.host.picture} name={logement?.host.name}/>
             <Tag title={logement?.tags}/>
             <Collapse  title="Description" text={logement?.description} />
             <Collapse  title= "Équipements" />
