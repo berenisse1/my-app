@@ -3,17 +3,20 @@ import'../../styles/Collapse.css';
 import arrow from '../../assets/arrow.png'
 
 
-function Collapse ({collapse}){
+
+function Collapse ({title, text}){
     return(
         <>
         <div className="collapse">
             <div className = "collapse-header">
                 <div className = "collapse-title">
-                    <h3>{collapse.title}</h3>
+                    {title}
                 </div>
                 <img src= {arrow} alt="flèche" />
             </div>
-            <div className ="collapse-text">{collapse.text} </div>
+            <div className ="collapse-text">
+                {text}
+            </div>
         </div>
         </>
     
