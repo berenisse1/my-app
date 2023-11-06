@@ -2,16 +2,26 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import logements from "../../data/logements.json";
 import Collapse from "../../components/Collapse/Collapse";
+import { useParams } from "react-router-dom";
+
 
 function Logement () { 
+    
+    const {id} = useParams();
+    const logement = logements.find((logement) => logement.id === id);
     return(
         <>
         <Header/>
         <main>
-            <div>
-                <Collapse title="Équipements" text={logements.equipments} key= {logements.id} />
-                <Collapse title="Description" text={logements.description} key= {logements.id} />
-            </div>
+        <div>
+            <Collapse  title="Description" text={logement?.description} />
+            <Collapse  title= "Équipements" />
+            { logement?.equipments.map((equipment) => 
+            <ul key={equipment}>
+                <li>{equipment}</li>
+            </ul>
+            )};
+        </div>
         </main>
         <Footer/>
         </>
@@ -21,3 +31,4 @@ function Logement () {
 }
 
 export default Logement;
+
