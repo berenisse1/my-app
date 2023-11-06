@@ -3,7 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import logements from "../../data/logements.json";
 import Collapse from "../../components/Collapse/Collapse";
 import { useParams } from "react-router-dom";
-
+import Tag from "../../components/Tag/Tag";
 
 function Logement () { 
     
@@ -14,6 +14,7 @@ function Logement () {
         <Header/>
         <main>
         <div>
+            <Tag title={logement?.tags}/>
             <Collapse  title="Description" text={logement?.description} />
             <Collapse  title= "Équipements" />
             { logement?.equipments.map((equipment) => 
