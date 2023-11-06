@@ -16,7 +16,7 @@ function About(){
             <main>
                 <Banner image={bannerAbout}/>
                 {collapseAbout.map((collapse)=>
-                <Collapse collaspe={collapse} key={collapse.id} /> 
+                    <Collapse title={collapse.title} text={collapse.text} key={collapse.id} /> 
                 )}
             </main>
         <Footer/>
