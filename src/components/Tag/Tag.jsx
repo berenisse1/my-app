@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Tag () {
+function Tag ({title}) {
     return (
       <div className="tag-container">
         <p className="tag">{title}</p>
