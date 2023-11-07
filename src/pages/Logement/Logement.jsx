@@ -26,7 +26,7 @@ function Logement () {
             <Collapse  title="Description" text={logement?.description} />
             <Collapse title="Équipements"/>
             { logement?.equipments.map((equipment) => 
-            <ul className="collapse-text" key={equipment}  >
+            <ul className="collapse-text" text={equipment} key={equipment}  >
                 <li>{equipment}</li>
             </ul>
             )};
