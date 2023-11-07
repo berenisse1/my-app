@@ -6,6 +6,8 @@ import { useParams } from "react-router-dom";
 import Tag from "../../components/Tag/Tag";
 import Host from "../../components/Host/Host";
 import Rate from "../../components/Rate/Rate";
+import Caroussel from "../../components/Carroussel/Carroussel";
+
 
 function Logement () { 
     
@@ -17,6 +19,7 @@ function Logement () {
         <Header/>
         <main>
         <div>
+            <Caroussel image={logement?.pictures} />
             <Host image={logement?.host.picture} name={logement?.host.name}/>
             <Tag title={logement?.tags}/>
             <Rate fullStar={logement?.rating} />
