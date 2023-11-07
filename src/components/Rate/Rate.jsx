@@ -1,10 +1,12 @@
 import React from 'react';
+import "../../styles/Rate.css";
 
-function Rate () {
+function Rate ({star}) {
+
     return (
-      <div className="Rate-container">
-        <img src="" alt="étoile" />
-        <img src="" alt="étoile vide" />  
+      <div className="rate-container">
+        <img src={star}  alt="étoile" />
+        <img src={star} alt="étoile vide" />  
       </div>
     );
   }
