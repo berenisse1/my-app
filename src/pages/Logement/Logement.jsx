@@ -5,13 +5,13 @@ import Collapse from "../../components/Collapse/Collapse";
 import { useParams } from "react-router-dom";
 import Tag from "../../components/Tag/Tag";
 import Host from "../../components/Host/Host";
-
-
+import Rate from "../../components/Rate/Rate";
 
 function Logement () { 
     
     const {id} = useParams();
     const logement = logements.find((logement) => logement.id === id);
+
     return(
         <>
         <Header/>
@@ -19,10 +19,11 @@ function Logement () {
         <div>
             <Host image={logement?.host.picture} name={logement?.host.name}/>
             <Tag title={logement?.tags}/>
+            <Rate fullStar={logement?.rating} />
             <Collapse  title="Description" text={logement?.description} />
-            <Collapse  title= "Équipements" />
+            <Collapse title="Équipements"/>
             { logement?.equipments.map((equipment) => 
-            <ul key={equipment}>
+            <ul className="collapse-text" key={equipment}  >
                 <li>{equipment}</li>
             </ul>
             )};
@@ -31,7 +32,7 @@ function Logement () {
         <Footer/>
         </>
         
-    )
+    );
 
 }
 
