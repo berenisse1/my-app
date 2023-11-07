@@ -1,9 +1,9 @@
-import Header from "../../components/Header/Header"
-import Banner from "../../components/Banner/Banner"
-import Card from "../../components/Card/Card"
-import Footer from "../../components/Footer/Footer"
-import bannerHome from "../../assets/bannerHome.png"
-import logements from "../../data/logements.json"
+import Header from "../../components/Header/Header";
+import Banner from "../../components/Banner/Banner";
+import Card from "../../components/Card/Card";
+import Footer from "../../components/Footer/Footer";
+import bannerHome from "../../assets/bannerHome.png";
+import logements from "../../data/logements.json";
 
 
 function Home() {
@@ -22,7 +22,7 @@ function Home() {
             </main>
             <Footer/>
         </>
-    )
+    );
 }
 
-export default Home
+export default Home;

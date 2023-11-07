@@ -1,6 +1,6 @@
 import React from "react";
 import'../../styles/Collapse.css';
-import arrow from '../../assets/arrow.png'
+import arrow from '../../assets/arrow.png';
 
 
 
@@ -20,7 +20,7 @@ function Collapse ({title, text}){
         </div>
         </>
     
-    )
+    );
          
 
 }
