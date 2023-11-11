@@ -8,8 +8,8 @@ import arrow from '../../assets/arrow.png';
 function Collapse ({title, text}){
 
     const [isOpen , setIsOpen] = useState(false);
-    let handleClick = () => {
-        isOpen = setIsOpen(true);
+    const handleClick = () => {
+        isOpen = setIsOpen(!isOpen);
           
     }
 
@@ -22,9 +22,7 @@ function Collapse ({title, text}){
                 </div>
                 <img src= {arrow} alt="flèche" />
             </div>
-            <div className ="collapse-text"> 
-               {isOpen? <p>{text}</p> : !isOpen }  
-            </div>
+            {isOpen && <div className ="collapse-text">{text}</div>}
         </div>
         </>
     
