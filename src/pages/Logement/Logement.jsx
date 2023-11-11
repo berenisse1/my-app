@@ -24,12 +24,12 @@ function Logement () {
             <Tag title={logement?.tags}/>
             <Rate fullStar={logement?.rating} />
             <Collapse  title="Description" text={logement?.description} />
-            <Collapse title="Équipements"/>
-            { logement?.equipments.map((equipment) => 
-            <ul className="collapse-text" text={equipment} key={equipment}  >
+            <Collapse title="Équipements" text={ logement?.equipments.map((equipment) => 
+            <ul className="collapse-text" key={equipment} >
                 <li>{equipment}</li>
             </ul>
-            )};
+            )}/>
+           
         </div>
         </main>
         <Footer/>
