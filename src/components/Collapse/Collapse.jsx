@@ -7,7 +7,7 @@ import arrow from '../../assets/arrow.png';
 
 function Collapse ({title, text}){
 
-    const [isOpen , setIsOpen] = useState(false);
+    let [isOpen , setIsOpen] = useState(false);
     const handleClick = () => {
         isOpen = setIsOpen(!isOpen);
           
