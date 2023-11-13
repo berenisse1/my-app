@@ -19,11 +19,12 @@ function Logement () {
         <Header/>
         <main>
         <div>
-            <Caroussel image={logement?.pictures} />
+            <Caroussel slides={logement?.pictures} title={logement?.title}
+            location={logement?.location} />
             <Host image={logement?.host.picture} name={logement?.host.name}/>
             <Tag title={logement?.tags}/>
-            <Rate fullStar={logement?.rating} />
-            <Collapse  title="Description" text={logement?.description} />
+            <Rate fullStar={logement?.rating}/>
+            <Collapse  title="Description" text={logement?.description}/>
             <Collapse title="Équipements" text={ logement?.equipments.map((equipment) => 
             <ul className="collapse-text" key={equipment} >
                 <li>{equipment}</li>
@@ -41,3 +42,8 @@ function Logement () {
 
 export default Logement;
 
+//const totalStar = 5
+//const rate = logement?.rating
+//const emptyStar = rate - totalStar
+//const fullStar = rate  
+  
