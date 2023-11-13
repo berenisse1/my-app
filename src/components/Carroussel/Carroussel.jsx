@@ -5,8 +5,15 @@ import arrow from "../../assets/arrow.png";
 function Caroussel ({slides, title, location}) {
     
     let [compteur , setCompteur] = useState(0);
-
-
+    const next = () => {
+        compteur = setCompteur(compteur+1);     
+    }
+    
+    const previous = () => {
+        compteur = setCompteur(compteur-1);
+    }
+   
+    
     return (
         <>
             <div className="slider">
@@ -15,10 +22,10 @@ function Caroussel ({slides, title, location}) {
                 </div>
                 <div>
                     <button>
-                        <img className="arrow arrow-left" src={arrow}  alt="arrow left previous"/>
+                        <img className="arrow arrow-left" src={arrow}  alt="arrow left previous"onClick={previous}/>
                     </button> 
 		            <button>
-                        <img className="arrow arrow-right" src= {arrow} alt="arrow right next"/>
+                        <img className="arrow arrow-right" src= {arrow} alt="arrow right next"onClick={next}/>
                     </button> 
                 </div>  
             </div>
