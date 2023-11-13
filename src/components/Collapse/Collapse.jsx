@@ -1,7 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import'../../styles/Collapse.css';
-import arrow from '../../assets/arrow.png';
+import arrowUp from '../../assets/arrowUp.png';
+import arrowDown from '../../assets/arrowDown.png';
+
 
 
 
@@ -20,7 +22,7 @@ function Collapse ({title, text}){
                 <div className = "collapse-title">
                     {title}
                 </div>
-                <img src= {arrow} alt="flèche" />
+                {isOpen? <img src= {arrowDown} alt="flèche" /> :<img src= {arrowUp} alt="flèche" />} 
             </div>
             {isOpen && <div className ="collapse-text">{text}</div>}
         </div>
