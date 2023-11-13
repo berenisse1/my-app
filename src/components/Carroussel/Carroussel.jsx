@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from "react";
-import arrow from "../../assets/arrow.png";
+import arrowRight from "../../assets/arrowRight.png";
+import arrowLeft from "../../assets/arrowLeft.png";
 
 function Caroussel ({slides, title, location}) {
     
@@ -21,11 +22,11 @@ function Caroussel ({slides, title, location}) {
                 </div>
                 <div>
                     <button>
-                        <img className="arrow arrow-left" src={arrow} alt="arrow left previous"onClick={previous}/>
+                        <img className="arrow arrow-left" src={arrowLeft} alt="arrow left previous"onClick={previous}/>
                         {(compteur < 0) && setCompteur(slides.length-1)}
                     </button> 
 		            <button>
-                        <img className="arrow arrow-right" src= {arrow} alt="arrow right next"onClick={next}/>
+                        <img className="arrow arrow-right" src= {arrowRight} alt="arrow right next"onClick={next}/>
                         {(compteur >= slides.length) && setCompteur(0)}
                     </button> 
                 </div>  
