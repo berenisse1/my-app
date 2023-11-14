@@ -1,14 +1,12 @@
-.banner-img {
-    border-radius: 25px;
-    height: 110px;
-    object-fit: cover;
-    width: 100%;
-  }
-
   .banner {
     border-radius: 25px;
     margin-bottom: 35px;
     position: relative;
+    height: 110px;
+
+  }
+  .banner-img {
+    border-radius: 25px;
   }
 
   .banner-text {
@@ -17,19 +15,34 @@
     left: 50px;
     position: absolute;
     top: 25px;
- 
+  }
+
+  .banner-dark{
+    background: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    mix-blend-mode: darken;
+  }
+
+  .banner-img, .banner-dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
   }
 
 
   @media (min-width: 1024px){
-   
-    .banner-img{
+
+    .banner{
       height: 223px;
     }
-  
+   
     .banner-text{
       font-size: 48px;
-      left: 500px;
+      left: 300px;
       top: 50px;
     }
 
