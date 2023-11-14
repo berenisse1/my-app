@@ -4,6 +4,47 @@ body {
     padding: 0;
 }
 * {
-    font-family: "Montserrat", arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    padding: 20px;
+}
+
+img{
+    object-fit: cover;
+}
+
+p{
+    color: #ff6060;
+}
+
+.rate-host-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.host-picture-name{
+    font-size: 12px;
+
+}
+
+
+
+@media (min-width: 1024px){
+    main{
+        padding: 50px;
+    }
+
+    .collapse-descktop{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .collapse-descktop .collapse{
+        width: 45%;
+    }
+   
 }
 
