@@ -1,4 +1,3 @@
-
 import React from 'react';
 import "../../styles/Rate.css";
 import fullStar from "../../assets/fullStar.png";
