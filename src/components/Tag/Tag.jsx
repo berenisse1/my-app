@@ -3,10 +3,11 @@ import "../../styles/Tag.css";
 
 function Tag ({title}) {
     return (
+     
       <div className="tag-container">
-        <p className="tag">{title}</p>
+        {title}
       </div>
     );
   }
   
-  export default Tag;
+export default Tag;

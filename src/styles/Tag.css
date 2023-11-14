@@ -1,3 +1,13 @@
-.tag-container p{
-    color: #ff6060;
+.tag{
+    padding: 10px;
+    background: #ff6060;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 6px;
+    padding: 4px;
+    font-size: 10px;
+    height: 18px;
+  
+    
 }
