@@ -2,25 +2,39 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px 60px;
+    gap: 20px 40px;
     border-radius: 25px;
-    background-color: #fff;
-    margin: auto;
+    background-color: #f6f6f6;
     padding: 20px;
+    
 
+}
+
+.card article{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
 }
    
 .card-img{
-    width: 340px;
+    width: 335px;
     height: 255px;
-    border-radius:25px ;
+    border-radius:10px ;
+    margin: 0px;
+    padding: 0px;
 
 }
 
-.card-title{
+.card h3{
     font-size: 18px;
+    text-overflow: clip;
+    color: #ffff;
     font-weight: 500;
-    text-decoration: none
+    text-decoration: none;
+    margin: 0px;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
     
 }
 
@@ -30,6 +44,6 @@
         grid-template-columns: 3fr 3fr 3fr;
         grid-column-gap: 60px;
         grid-row-gap: 50px;
-        background-color: #f6f6f6;
+        
     }
 }

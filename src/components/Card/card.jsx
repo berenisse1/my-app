@@ -4,12 +4,16 @@ import { Link } from "react-router-dom";
 
 function Card({logement}) {
     return (
-      <Link to={`/logements/${logement.id}`}>
+      <div>
         <article>
-          <img src={logement.cover} alt={logement.title} className="card-img" />
-          <h3 className="card-title">{logement.title}</h3>
+          <Link to={`/logements/${logement.id}`}>
+            <div>
+              <h3 className="card-title">{logement.title}</h3>
+              <img src={logement.cover} alt={logement.title} className="card-img" />
+            </div>
+          </Link>
         </article>
-      </Link>
+      </div>
     );
 }
 
