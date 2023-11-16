@@ -22,12 +22,12 @@ function Collapse ({title, text}){
                 <div className = "collapse-title">
                     {title}
                 </div>
-                {isOpen? <img src= {arrowDown} alt="flèche" /> :<img src= {arrowUp} alt="flèche" />} 
+                {isOpen? <img src= {arrowDown} alt="flèche"/> : <img src= {arrowUp} alt="flèche"/>} 
             </div>
             {isOpen && <div className ="collapse-text">{text}</div>}
         </div>
         </>
-    
+        
     );
          
 
