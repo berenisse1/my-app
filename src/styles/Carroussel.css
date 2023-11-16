@@ -34,10 +34,6 @@
 	right: 10px;
 }
 
-.slider-text p{
-	font-size: 18px;
-	font-weight: 500;
-}
 .slider-number{
 	color: #fff;
 	font-size: 16px;
@@ -50,4 +46,6 @@
     .slider{ 
         min-height: 415px;
     }
+
+	
 }
