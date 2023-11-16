@@ -4,7 +4,7 @@ import arrowRight from "../../assets/arrowRight.png";
 import arrowLeft from "../../assets/arrowLeft.png";
 import "../../styles/Carroussel.css";
 
-function Caroussel ({slides, title, location}) {
+function Caroussel ({slides}) {
     
     let [compteur , setCompteur] = useState(0);
     const next = () => {
@@ -31,10 +31,6 @@ function Caroussel ({slides, title, location}) {
                     </div>
                 </div>  
             </div>
-            <div className="slider-text">
-                <p>{title}</p>
-                <p>{location}</p>
-            </div>  
         </>
     
     );
