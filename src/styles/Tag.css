@@ -1,13 +1,26 @@
+.tag-container{
+    margin: 0px;
+}
 .tag{
     padding: 10px;
     background: #ff6060;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    margin: 6px;
+    border-radius: 10px;
+    margin-right: 10px;
     padding: 4px;
     font-size: 10px;
     height: 18px;
+    width: 100px;
   
     
+}
+
+@media (min-width: 1024px){
+    .tag{ 
+        width: 150px;
+        height: 25px;
+        font-size: 14px;
+    }
+	
 }
