@@ -1,32 +1,33 @@
 .collapse {
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: left;
-  }
+
+}
   
 .collapse-header {
-    padding: 5px;
+    padding: 7px;
     align-items: center;
     background-color: #ff6060;
     box-sizing: border-box;
     border-radius: 6px;  
     width: 100%;
-    height: 40px;
+    height: 30px;
     position: relative;
 }
   
 .collapse-title {
-
     color: #ffffff;
-    height: 50px;
-  
-
+    font-size:13px;
 }
   
 .collapse-text{
     padding: 5px;
     color: #ff6060;
-    background: color #f6f6f6; ;
+    font-size: 12px;
+    background: color #f6f6f6; 
+    padding: 20px;
+    line-height: 1.5;
 }
 
 .collapse-header img{
@@ -35,4 +36,24 @@
     bottom: 2px;
     right: 4px;
 
+}
+
+
+@media (min-width: 1024px){
+/* css page  about ds div collapse about*/
+ 
+    .collapse-title{
+        font-size: 18px;
+    }
+
+    .collapse-header{
+        height: 40px;
+        padding: 10px;
+    }
+
+    .collapse-text{
+        font-size: 18px;
+    }   
+   
+         
 }
