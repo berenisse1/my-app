@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import bannerAbout from "../../assets/bannerAbout.png";
 import Collapse from "../../components/Collapse/Collapse";
 import collapseAbout from "../../data/collapseAbout.json";
+import "../../styles/About.css";
 
 
 
@@ -15,9 +16,12 @@ function About(){
         <Header />
             <main>
                 <Banner image={bannerAbout}/>
-                {collapseAbout.map((collapse)=>
-                    <Collapse title={collapse.title} text={collapse.text} key={collapse.id} /> 
-                )}
+                <div className="collapse-about">
+                    {collapseAbout.map((collapse)=>
+                        <Collapse title={collapse.title} text={collapse.text} key={collapse.id} /> 
+                    )}
+                </div>
+                
             </main>
         <Footer/>
         </>   
