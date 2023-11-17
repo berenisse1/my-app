@@ -6,6 +6,7 @@
 	width: 100%;
 	min-height: 255px;
 	position: relative;
+	margin-top: 25px;
 }
 
 .slider-image{
@@ -22,16 +23,17 @@
 
 .arrow{
 	position: absolute;
-	width: 25px;
+	width: 15px;
 	height: 25px;
+
 }
 
 .arrow-left{
-	left: 10px;
+	left: 5px;	
 }
 
 .arrow-right{
-	right: 10px;
+	right: 5px;
 }
 
 .slider-number{
@@ -45,7 +47,21 @@
 @media (min-width: 1024px){
     .slider{ 
         min-height: 415px;
+		margin-top: 50px;
     }
 
+	.arrow{
+		position: absolute;
+		width: 30px;
+		height: 50px;
 	
+	}
+
+	.arrow-left{
+		left: 15px;	
+	}
+	
+	.arrow-right{
+		right: 15px;
+	}
 }
