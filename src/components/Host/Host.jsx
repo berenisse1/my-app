@@ -7,7 +7,7 @@ function Host ({image, name}) {
                 <img src={image} alt="Photo hote" />
             </div>
             <div className="host-name">
-                <p >{name}</p>
+                <p>{name}</p>
             </div>
         </>
     

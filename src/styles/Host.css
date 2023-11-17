@@ -6,11 +6,21 @@
 .host-name{
     color: #ff6060;
     font-size: 12px;
+    width: 50px;
+   
 }
+
+
 
 @media (min-width: 1024px){
     .host-picture img { 
         width: 64px;
         height: 64px;
     }
+    .host-name{
+        font-size: 18px;
+    
+    }
+
 }
+
