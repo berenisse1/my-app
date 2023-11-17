@@ -9,6 +9,7 @@ import Caroussel from "../../components/Carroussel/Carroussel";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import "../../styles/Logement.css";
 
 
 function Logement () { 
@@ -43,7 +44,7 @@ function Logement () {
             <div className="collapse-descktop">
                 <Collapse  title="Description" text={logement?.description}/>
                 <Collapse title="Équipements" text={ logement?.equipments.map((equipment) => 
-                    <ul className="collapse-text" key={equipment} >
+                    <ul className="collapse-equiment" key={equipment} >
                         <li>{equipment}</li>
                    </ul>
                 )}/>
