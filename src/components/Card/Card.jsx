@@ -8,10 +8,9 @@ function Card({logement}) {
   return (
     <div className="card-container">
       <Link className="card-link" to={`/logements/${logement.id}`}>
-        <div className="card-img-container">
           <h3 className="card-title">{logement.title}</h3>
           <img src={logement.cover} alt={logement.title} className="card-img" />
-        </div>
+          <div className="dark-card-container"></div>
       </Link>
     </div>
   );
