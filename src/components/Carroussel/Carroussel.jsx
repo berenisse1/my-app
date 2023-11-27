@@ -14,13 +14,16 @@ function Caroussel ({slides}) {
     const previous = () => {
         compteur = setCompteur(compteur-1);
     }
-    
+
+
+
     return (
         <>
             <div className="slider">
                 <div className="slider-image" >
                     <img src={slides[compteur]} alt=""/>
                 </div>
+                {(slides.length > 1) &&
                 <div>
                     <img className="arrow arrow-left" src={arrowLeft} alt="arrow left previous"onClick={previous}/>
                     {(compteur < 0) && setCompteur(slides.length-1)}
@@ -29,7 +32,8 @@ function Caroussel ({slides}) {
                     <div className='slider-number' >
                         {compteur+1}/{slides.length}
                     </div>
-                </div>  
+                </div> 
+                }
             </div>
         </>
     
