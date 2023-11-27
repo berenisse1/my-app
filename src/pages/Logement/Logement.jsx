@@ -7,7 +7,6 @@ import Host from "../../components/Host/Host";
 import Rate from "../../components/Rate/Rate";
 import Caroussel from "../../components/Carroussel/Carroussel";
 import ErrorPage from "../ErrorPage/ErrorPage";
-import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import "../../styles/Logement.css";
 
@@ -16,7 +15,9 @@ function Logement () {
     
     const {id} = useParams();
     const logement = logements.find((logement) => logement.id === id);
-    (!logement) && <Link to={`/"*"/${<ErrorPage />}`}></Link>;
+    if (!logement) {
+        return <ErrorPage />;
+    }
 
     return(
         <>
