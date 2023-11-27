@@ -4,7 +4,6 @@ header {
   margin: auto;
   display: flex;
   justify-content: space-between;
-
 }
 
 header nav {
@@ -19,7 +18,10 @@ header nav a {
   color: #ff6060;
   margin: auto;
   text-decoration: none;
-  
+}
+.link-home:hover, .link-about:hover{
+  text-decoration: underline;
+  color: #ff6060;
 }
 
 header img {

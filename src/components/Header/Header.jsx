@@ -11,8 +11,8 @@ function Header(){
                     <img className="logo" src={logo} alt="logo agence kasa" />
                 </div>
                 <nav>
-                    <Link to="/">Acceuil</Link>
-                    <Link to="/a-propos">A propos</Link>
+                    <Link className="link-home" to="/">Acceuil</Link>
+                    <Link className="link-about" to="/a-propos">A propos</Link>
                 </nav>
            </header>
         </>
