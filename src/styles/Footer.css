@@ -1,19 +1,15 @@
 footer {
-    background-color: black;
+    background-color:var(--forth-color);
     display: flex;
     flex-direction: column;
     height: 150px;
     width: 100%;
-
-    
-
 }
 .footer-logo{
-margin: auto;
+    margin: auto;
 }
 footer p{
-    color: #fff;
+    color:var(--primary-color);
     text-align: center;
     margin-bottom: 29px;
-
 }

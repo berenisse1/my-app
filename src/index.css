@@ -4,26 +4,28 @@ body {
     padding: 0;
 }
 * {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat',sans-serif;
     box-sizing: border-box;
 }
-
+:root {
+    --primary-color: #ffff;
+    --second-color: #ff6060;
+    --third-color:#f6f6f6 ;
+    --forth-color:#000;
+}
 main{
     padding: 0px 20px;
 }
-
 img{
     object-fit: cover;
 }
-
 p{
-    color: #ff6060;
+    color: var(--second-color);
 }
 
 @media (min-width: 1024px){
     main{
         padding: 0px 50px;
-        
     }
 }
 

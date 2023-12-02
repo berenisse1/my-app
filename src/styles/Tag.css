@@ -3,8 +3,8 @@
 }
 .tag{
     padding: 10px;
-    background: #ff6060;
-    color: #fff;
+    background: var(--second-color);
+    color: var(--primary-color);
     border: none;
     border-radius: 10px;
     margin-right: 10px;
@@ -12,8 +12,6 @@
     font-size: 10px;
     height: 18px;
     width: 100px;
-  
-    
 }
 
 @media (min-width: 1024px){

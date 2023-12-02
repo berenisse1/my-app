@@ -7,7 +7,7 @@
 .collapse-header {
     padding: 7px;
     align-items: center;
-    background-color: #ff6060;
+    background-color: var(--second-color);
     box-sizing: border-box;
     border-radius: 6px;  
     width: 100%;
@@ -16,28 +16,26 @@
 }
   
 .collapse-title {
-    color: #ffffff;
-    font-size:13px;
+    color: var(--primary-color);
+    font-size: 13px;
 }
   
 .collapse-text{
     padding: 5px;
-    color: #ff6060;
+    color: var(--second-color);
     font-size: 12px;
-    background-color:  #f6f6f6; 
+    background-color: var(--third-color); 
     padding: 20px;
     line-height: 1.5;
     cursor: pointer;
 }
 
 .collapse-header img{
-    color: #ffffff;
+    color: var(--third-color);
     position: absolute;
     bottom: 2px;
     right: 4px;
-
 }
-
 
 @media (min-width: 1024px){
     .collapse-title{
@@ -51,5 +49,4 @@
         font-size: 18px;
     }   
    
-         
 }

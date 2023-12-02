@@ -1,19 +1,14 @@
 .rate-container {
-    color: #ff6060;
+    color: var(--second-color);
     margin-top: 24px;
     margin-bottom: 24px;
 }
-
 .rate-container img{
     padding: 0px 2px;
-
 }
 
 @media (min-width: 1024px){
-   
 	.rate-container img{
         width: 20px;
-        
-    
     }
 }
