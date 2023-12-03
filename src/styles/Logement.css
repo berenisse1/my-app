@@ -12,17 +12,6 @@
     line-height: 1.5;
     gap: 15px;
 }
-.logement-text p{
-	font-weight: 500;
-}
-.logement-title{
-	font-size: 18px;
-	margin: 15px 0px 5px;
-}
-.logement-location{
-	font-size: 14px;
-	margin-top: 0px;
-}
 .collapse-equiment{
     list-style: none;
     padding-left: 0;
@@ -34,13 +23,6 @@
 
 @media (min-width: 1024px){
 
-    .logement-title{
-		font-size: 34px;
-		margin: 30px 0px 5px;
-	}
-	.logement-location{
-	font-size: 18px;
-	}
     .logement-tag-rate-host-container{
         display: flex;
         justify-content: space-between;
