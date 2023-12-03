@@ -1,3 +1,4 @@
+/*{avent de preciser fonction d'affichage on importe les element a afficher }*/
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import logements from "../../data/logements.json";
@@ -9,12 +10,15 @@ import Caroussel from "../../components/Carroussel/Carroussel";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import { useParams } from "react-router-dom";
 import "../../styles/Logement.css";
+import LocationId from "../../components/LocationId/LocationId";
 
 
 function Logement () { 
-    
+    /*{recupère id de l'url avec useParms}*/
     const {id} = useParams();
+    /*{trouve les données du logemennt dont l'id coresspondant à celui de l'url}*/
     const logement = logements.find((logement) => logement.id === id);
+    /*{condition d'affichage de la page d'erreur}*/
     if (!logement) {
         return <ErrorPage />;
     }
@@ -27,10 +31,7 @@ function Logement () {
             <Caroussel slides={logement?.pictures} />
             <div className="logement-tag-rate-host-container">   
                 <div className="logement-tag-contaigner">
-                    <div className="logement-text">
-                        <p className="logement-title">{logement?.title}</p>
-                        <p className="logement-location" >{logement?.location} </p>
-                   </div>  
+                    <LocationId title={logement?.title} location={logement?.location} />  
                     <Tag title={logement?.tags.map((tag) =>
                         <button className="tag"key={tag}>{tag}</button>
                     )}/>
