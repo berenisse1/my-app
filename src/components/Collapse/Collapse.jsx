@@ -4,15 +4,11 @@ import'../../styles/Collapse.css';
 import arrowUp from '../../assets/arrowUp.png';
 import arrowDown from '../../assets/arrowDown.png';
 
-
-
-
 function Collapse ({title, text}){
 
     let [isOpen , setIsOpen] = useState(false);
     const handleClick = () => {
-        isOpen = setIsOpen(!isOpen);
-          
+        isOpen = setIsOpen(!isOpen);   
     }
 
     return(
@@ -30,7 +26,6 @@ function Collapse ({title, text}){
         
     );
          
-
 }
 
  

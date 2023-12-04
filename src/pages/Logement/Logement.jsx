@@ -1,4 +1,4 @@
-/*{avent de preciser fonction d'affichage on importe les element a afficher }*/
+/*{Importe les élements à afficher }*/
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import logements from "../../data/logements.json";
@@ -14,11 +14,11 @@ import LocationId from "../../components/LocationId/LocationId";
 
 
 function Logement () { 
-    /*{recupère id de l'url avec useParms}*/
+    /*{Récupère id de l'URL avec useParms}*/
     const {id} = useParams();
-    /*{trouve les données du logemennt dont l'id coresspondant à celui de l'url}*/
+    /*{Trouve les données du logement dont l'id correspondant à celui de l'URL}*/
     const logement = logements.find((logement) => logement.id === id);
-    /*{condition d'affichage de la page d'erreur}*/
+    /*{Condition d'affichage de la page d'erreur}*/
     if (!logement) {
         return <ErrorPage />;
     }

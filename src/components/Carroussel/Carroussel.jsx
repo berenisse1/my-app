@@ -16,7 +16,6 @@ function Caroussel ({slides}) {
     }
 
 
-
     return (
         <>
             <div className="slider">

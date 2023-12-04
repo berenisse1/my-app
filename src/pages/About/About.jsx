@@ -7,9 +7,6 @@ import Collapse from "../../components/Collapse/Collapse";
 import collapseAbout from "../../data/collapseAbout.json";
 import "../../styles/About.css";
 
-
-
-
 function About(){
     return(
         <>
